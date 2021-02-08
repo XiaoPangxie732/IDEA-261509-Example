@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'idea'
+}
+sourceSets {
+    main {
+        java.srcDirs = []
+        resources.srcDirs = []
+    }
+    X {
+        java.srcDirs = ['src/x/java']
+        resources.srcDirs = ['src/x/resources']
+    }
+}
+
+jar {
+    from sourceSets.X.output
+}

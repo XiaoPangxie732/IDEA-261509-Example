@@ -1,0 +1,3 @@
+rootProject.name = 'IDEA-261509-Example'
+
+include 'A', 'B'
